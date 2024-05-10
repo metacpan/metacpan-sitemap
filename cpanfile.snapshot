@@ -1,0 +1,1212 @@
+# carton snapshot format: version 1.0
+DISTRIBUTIONS
+  Any-URI-Escape-0.01
+    pathname: P/PH/PHRED/Any-URI-Escape-0.01.tar.gz
+    provides:
+      Any::URI::Escape 0.01
+    requirements:
+      ExtUtils::MakeMaker 0
+      URI::Escape 0
+  Apache-LogFormat-Compiler-0.36
+    pathname: K/KA/KAZEBURO/Apache-LogFormat-Compiler-0.36.tar.gz
+    provides:
+      Apache::LogFormat::Compiler 0.36
+    requirements:
+      Module::Build::Tiny 0.035
+      POSIX 0
+      POSIX::strftime::Compiler 0.30
+      Time::Local 0
+      perl 5.008001
+  B-Hooks-EndOfScope-0.28
+    pathname: E/ET/ETHER/B-Hooks-EndOfScope-0.28.tar.gz
+    provides:
+      B::Hooks::EndOfScope 0.28
+      B::Hooks::EndOfScope::PP 0.28
+      B::Hooks::EndOfScope::XS 0.28
+    requirements:
+      ExtUtils::MakeMaker 0
+      Hash::Util::FieldHash 0
+      Module::Implementation 0.05
+      Scalar::Util 0
+      Sub::Exporter::Progressive 0.001006
+      Text::ParseWords 0
+      Tie::Hash 0
+      Variable::Magic 0.48
+      perl 5.006001
+      strict 0
+      warnings 0
+  Class-Inspector-1.36
+    pathname: P/PL/PLICEASE/Class-Inspector-1.36.tar.gz
+    provides:
+      Class::Inspector 1.36
+      Class::Inspector::Functions 1.36
+    requirements:
+      ExtUtils::MakeMaker 0
+      File::Spec 0.80
+      base 0
+      perl 5.008
+  Class-Method-Modifiers-2.15
+    pathname: E/ET/ETHER/Class-Method-Modifiers-2.15.tar.gz
+    provides:
+      Class::Method::Modifiers 2.15
+    requirements:
+      B 0
+      Carp 0
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      base 0
+      perl 5.006
+      strict 0
+      warnings 0
+  Clone-0.46
+    pathname: G/GA/GARU/Clone-0.46.tar.gz
+    provides:
+      Clone 0.46
+    requirements:
+      ExtUtils::MakeMaker 0
+  Cookie-Baker-0.12
+    pathname: K/KA/KAZEBURO/Cookie-Baker-0.12.tar.gz
+    provides:
+      Cookie::Baker 0.12
+    requirements:
+      Exporter 0
+      Module::Build::Tiny 0.035
+      URI::Escape 0
+      perl 5.008001
+  Cpanel-JSON-XS-4.37
+    pathname: R/RU/RURBAN/Cpanel-JSON-XS-4.37.tar.gz
+    provides:
+      Cpanel::JSON::XS 4.37
+      Cpanel::JSON::XS::Type undef
+    requirements:
+      Carp 0
+      Config 0
+      Encode 1.9801
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      Pod::Text 2.08
+      XSLoader 0
+      overload 0
+      strict 0
+      warnings 0
+  Data-OptList-0.114
+    pathname: R/RJ/RJBS/Data-OptList-0.114.tar.gz
+    provides:
+      Data::OptList 0.114
+    requirements:
+      ExtUtils::MakeMaker 6.78
+      List::Util 0
+      Params::Util 0
+      Sub::Install 0.921
+      perl 5.012
+      strict 0
+      warnings 0
+  Devel-GlobalDestruction-0.14
+    pathname: H/HA/HAARG/Devel-GlobalDestruction-0.14.tar.gz
+    provides:
+      Devel::GlobalDestruction 0.14
+    requirements:
+      ExtUtils::MakeMaker 0
+      Sub::Exporter::Progressive 0.001011
+      perl 5.006
+  Devel-StackTrace-2.05
+    pathname: D/DR/DROLSKY/Devel-StackTrace-2.05.tar.gz
+    provides:
+      Devel::StackTrace 2.05
+      Devel::StackTrace::Frame 2.05
+    requirements:
+      ExtUtils::MakeMaker 0
+      File::Spec 0
+      Scalar::Util 0
+      overload 0
+      perl 5.006
+      strict 0
+      warnings 0
+  Devel-StackTrace-AsHTML-0.15
+    pathname: M/MI/MIYAGAWA/Devel-StackTrace-AsHTML-0.15.tar.gz
+    provides:
+      Devel::StackTrace::AsHTML 0.15
+    requirements:
+      Devel::StackTrace 0
+      ExtUtils::MakeMaker 0
+  Dist-CheckConflicts-0.11
+    pathname: D/DO/DOY/Dist-CheckConflicts-0.11.tar.gz
+    provides:
+      Dist::CheckConflicts 0.11
+    requirements:
+      Carp 0
+      Exporter 0
+      ExtUtils::MakeMaker 6.30
+      Module::Runtime 0.009
+      base 0
+      strict 0
+      warnings 0
+  Encode-Locale-1.05
+    pathname: G/GA/GAAS/Encode-Locale-1.05.tar.gz
+    provides:
+      Encode::Locale 1.05
+    requirements:
+      Encode 2
+      Encode::Alias 0
+      ExtUtils::MakeMaker 0
+      perl 5.008
+  File-Listing-6.16
+    pathname: P/PL/PLICEASE/File-Listing-6.16.tar.gz
+    provides:
+      File::Listing 6.16
+      File::Listing::apache 6.16
+      File::Listing::dosftp 6.16
+      File::Listing::netware 6.16
+      File::Listing::unix 6.16
+      File::Listing::vms 6.16
+    requirements:
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      HTTP::Date 0
+      perl 5.006
+  File-ShareDir-1.118
+    pathname: R/RE/REHSACK/File-ShareDir-1.118.tar.gz
+    provides:
+      File::ShareDir 1.118
+    requirements:
+      Carp 0
+      Class::Inspector 1.12
+      ExtUtils::MakeMaker 0
+      File::ShareDir::Install 0.13
+      File::Spec 0.80
+      perl 5.008001
+      warnings 0
+  File-ShareDir-Install-0.14
+    pathname: E/ET/ETHER/File-ShareDir-Install-0.14.tar.gz
+    provides:
+      File::ShareDir::Install 0.14
+    requirements:
+      Carp 0
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      File::Spec 0
+      IO::Dir 0
+      perl 5.006
+      strict 0
+      warnings 0
+  Filesys-Notify-Simple-0.14
+    pathname: M/MI/MIYAGAWA/Filesys-Notify-Simple-0.14.tar.gz
+    provides:
+      Filesys::Notify::Simple 0.14
+    requirements:
+      ExtUtils::MakeMaker 0
+      perl 5.008001
+  HTML-Parser-3.82
+    pathname: O/OA/OALDERS/HTML-Parser-3.82.tar.gz
+    provides:
+      HTML::Entities 3.82
+      HTML::Filter 3.82
+      HTML::HeadParser 3.82
+      HTML::LinkExtor 3.82
+      HTML::Parser 3.82
+      HTML::PullParser 3.82
+      HTML::TokeParser 3.82
+    requirements:
+      Carp 0
+      Exporter 0
+      ExtUtils::MakeMaker 6.52
+      HTML::Tagset 0
+      HTTP::Headers 0
+      IO::File 0
+      URI 0
+      URI::URL 0
+      XSLoader 0
+      strict 0
+  HTML-Tagset-3.24
+    pathname: P/PE/PETDANCE/HTML-Tagset-3.24.tar.gz
+    provides:
+      HTML::Tagset 3.24
+    requirements:
+      ExtUtils::MakeMaker 6.46
+      perl 5.010001
+  HTTP-Cookies-6.11
+    pathname: O/OA/OALDERS/HTTP-Cookies-6.11.tar.gz
+    provides:
+      HTTP::Cookies 6.11
+      HTTP::Cookies::Microsoft 6.11
+      HTTP::Cookies::Netscape 6.11
+    requirements:
+      Carp 0
+      ExtUtils::MakeMaker 0
+      HTTP::Date 6
+      HTTP::Headers::Util 6
+      HTTP::Request 0
+      locale 0
+      perl 5.008001
+      strict 0
+  HTTP-Date-6.06
+    pathname: O/OA/OALDERS/HTTP-Date-6.06.tar.gz
+    provides:
+      HTTP::Date 6.06
+    requirements:
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      Time::Local 1.28
+      Time::Zone 0
+      perl 5.006002
+      strict 0
+  HTTP-Entity-Parser-0.25
+    pathname: K/KA/KAZEBURO/HTTP-Entity-Parser-0.25.tar.gz
+    provides:
+      HTTP::Entity::Parser 0.25
+      HTTP::Entity::Parser::JSON undef
+      HTTP::Entity::Parser::MultiPart undef
+      HTTP::Entity::Parser::OctetStream undef
+      HTTP::Entity::Parser::UrlEncoded undef
+    requirements:
+      Encode 0
+      File::Temp 0
+      HTTP::MultiPartParser 0
+      Hash::MultiValue 0
+      JSON::MaybeXS 1.003007
+      Module::Build::Tiny 0.035
+      Module::Load 0
+      Stream::Buffered 0
+      WWW::Form::UrlEncoded 0.23
+      perl 5.008001
+  HTTP-Headers-Fast-0.22
+    pathname: T/TO/TOKUHIROM/HTTP-Headers-Fast-0.22.tar.gz
+    provides:
+      HTTP::Headers::Fast 0.22
+    requirements:
+      HTTP::Date 0
+      Module::Build::Tiny 0.035
+      perl 5.008001
+  HTTP-Message-6.45
+    pathname: O/OA/OALDERS/HTTP-Message-6.45.tar.gz
+    provides:
+      HTTP::Config 6.45
+      HTTP::Headers 6.45
+      HTTP::Headers::Auth 6.45
+      HTTP::Headers::ETag 6.45
+      HTTP::Headers::Util 6.45
+      HTTP::Message 6.45
+      HTTP::Request 6.45
+      HTTP::Request::Common 6.45
+      HTTP::Response 6.45
+      HTTP::Status 6.45
+    requirements:
+      Carp 0
+      Clone 0.46
+      Compress::Raw::Bzip2 0
+      Compress::Raw::Zlib 2.062
+      Encode 3.01
+      Encode::Locale 1
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      File::Spec 0
+      HTTP::Date 6
+      IO::Compress::Bzip2 2.021
+      IO::Compress::Deflate 0
+      IO::Compress::Gzip 0
+      IO::HTML 0
+      IO::Uncompress::Inflate 0
+      IO::Uncompress::RawInflate 0
+      LWP::MediaTypes 6
+      MIME::Base64 2.1
+      MIME::QuotedPrint 0
+      URI 1.10
+      parent 0
+      perl 5.008001
+      strict 0
+      warnings 0
+  HTTP-MultiPartParser-0.02
+    pathname: C/CH/CHANSEN/HTTP-MultiPartParser-0.02.tar.gz
+    provides:
+      HTTP::MultiPartParser 0.02
+    requirements:
+      Carp 0
+      ExtUtils::MakeMaker 6.59
+      Scalar::Util 0
+      Test::Deep 0
+      Test::More 0.88
+      perl 5.008001
+  HTTP-Negotiate-6.01
+    pathname: G/GA/GAAS/HTTP-Negotiate-6.01.tar.gz
+    provides:
+      HTTP::Negotiate 6.01
+    requirements:
+      ExtUtils::MakeMaker 0
+      HTTP::Headers 6
+      perl 5.008001
+  Hash-MultiValue-0.16
+    pathname: A/AR/ARISTOTLE/Hash-MultiValue-0.16.tar.gz
+    provides:
+      Hash::MultiValue 0.16
+    requirements:
+      ExtUtils::MakeMaker 0
+      perl 5.008001
+  IO-HTML-1.004
+    pathname: C/CJ/CJM/IO-HTML-1.004.tar.gz
+    provides:
+      IO::HTML 1.004
+    requirements:
+      Carp 0
+      Encode 2.10
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      perl 5.008
+  JSON-MaybeXS-1.004005
+    pathname: E/ET/ETHER/JSON-MaybeXS-1.004005.tar.gz
+    provides:
+      JSON::MaybeXS 1.004005
+    requirements:
+      Carp 0
+      Cpanel::JSON::XS 2.3310
+      ExtUtils::MakeMaker 0
+      JSON::PP 2.27300
+      Scalar::Util 0
+      perl 5.006
+  LWP-MediaTypes-6.04
+    pathname: O/OA/OALDERS/LWP-MediaTypes-6.04.tar.gz
+    provides:
+      LWP::MediaTypes 6.04
+    requirements:
+      Carp 0
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      File::Basename 0
+      Scalar::Util 0
+      perl 5.006002
+      strict 0
+  Log-Any-1.717
+    pathname: P/PR/PREACTION/Log-Any-1.717.tar.gz
+    provides:
+      Log::Any 1.717
+      Log::Any::Adapter 1.717
+      Log::Any::Adapter::Base 1.717
+      Log::Any::Adapter::Capture 1.717
+      Log::Any::Adapter::File 1.717
+      Log::Any::Adapter::Multiplex 1.717
+      Log::Any::Adapter::Null 1.717
+      Log::Any::Adapter::Stderr 1.717
+      Log::Any::Adapter::Stdout 1.717
+      Log::Any::Adapter::Syslog 1.717
+      Log::Any::Adapter::Test 1.717
+      Log::Any::Adapter::Util 1.717
+      Log::Any::Manager 1.717
+      Log::Any::Proxy 1.717
+      Log::Any::Proxy::Null 1.717
+      Log::Any::Proxy::Test 1.717
+      Log::Any::Proxy::WithStackTrace 1.717
+      Log::Any::Test 1.717
+    requirements:
+      ExtUtils::MakeMaker 0
+  Module-Build-0.4234
+    pathname: L/LE/LEONT/Module-Build-0.4234.tar.gz
+    provides:
+      Module::Build 0.4234
+      Module::Build::Base 0.4234
+      Module::Build::Compat 0.4234
+      Module::Build::Config 0.4234
+      Module::Build::Cookbook 0.4234
+      Module::Build::Dumper 0.4234
+      Module::Build::Notes 0.4234
+      Module::Build::PPMMaker 0.4234
+      Module::Build::Platform::Default 0.4234
+      Module::Build::Platform::MacOS 0.4234
+      Module::Build::Platform::Unix 0.4234
+      Module::Build::Platform::VMS 0.4234
+      Module::Build::Platform::VOS 0.4234
+      Module::Build::Platform::Windows 0.4234
+      Module::Build::Platform::aix 0.4234
+      Module::Build::Platform::cygwin 0.4234
+      Module::Build::Platform::darwin 0.4234
+      Module::Build::Platform::os2 0.4234
+      Module::Build::PodParser 0.4234
+    requirements:
+      CPAN::Meta 2.142060
+      Cwd 0
+      Data::Dumper 0
+      ExtUtils::CBuilder 0.27
+      ExtUtils::Install 0
+      ExtUtils::Manifest 0
+      ExtUtils::Mkbootstrap 0
+      ExtUtils::ParseXS 2.21
+      File::Basename 0
+      File::Compare 0
+      File::Copy 0
+      File::Find 0
+      File::Path 0
+      File::Spec 0.82
+      Getopt::Long 0
+      Module::Metadata 1.000002
+      Perl::OSType 1
+      TAP::Harness 3.29
+      Text::Abbrev 0
+      Text::ParseWords 0
+      perl 5.006001
+      version 0.87
+  Module-Implementation-0.09
+    pathname: D/DR/DROLSKY/Module-Implementation-0.09.tar.gz
+    provides:
+      Module::Implementation 0.09
+    requirements:
+      Carp 0
+      ExtUtils::MakeMaker 0
+      Module::Runtime 0.012
+      Try::Tiny 0
+      strict 0
+      warnings 0
+  Module-Runtime-0.016
+    pathname: Z/ZE/ZEFRAM/Module-Runtime-0.016.tar.gz
+    provides:
+      Module::Runtime 0.016
+    requirements:
+      Module::Build 0
+      Test::More 0.41
+      perl 5.006
+      strict 0
+      warnings 0
+  Moo-2.005005
+    pathname: H/HA/HAARG/Moo-2.005005.tar.gz
+    provides:
+      Method::Generate::Accessor undef
+      Method::Generate::BuildAll undef
+      Method::Generate::Constructor undef
+      Method::Generate::DemolishAll undef
+      Moo 2.005005
+      Moo::HandleMoose undef
+      Moo::HandleMoose::FakeConstructor undef
+      Moo::HandleMoose::FakeMetaClass undef
+      Moo::HandleMoose::_TypeMap undef
+      Moo::Object undef
+      Moo::Role 2.005005
+      Moo::_Utils undef
+      Moo::sification undef
+      oo undef
+    requirements:
+      Carp 0
+      Class::Method::Modifiers 1.10
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      Role::Tiny 2.002003
+      Scalar::Util 1.00
+      Sub::Defer 2.006006
+      Sub::Quote 2.006006
+      perl 5.006
+  Net-HTTP-6.23
+    pathname: O/OA/OALDERS/Net-HTTP-6.23.tar.gz
+    provides:
+      Net::HTTP 6.23
+      Net::HTTP::Methods 6.23
+      Net::HTTP::NB 6.23
+      Net::HTTPS 6.23
+    requirements:
+      Carp 0
+      Compress::Raw::Zlib 0
+      ExtUtils::MakeMaker 0
+      IO::Socket::INET 0
+      IO::Uncompress::Gunzip 0
+      URI 0
+      base 0
+      perl 5.006002
+      strict 0
+      warnings 0
+  Net-IP-1.26
+    pathname: M/MA/MANU/Net-IP-1.26.tar.gz
+    provides:
+      Net::IP 1.26
+    requirements:
+      ExtUtils::MakeMaker 0
+  POSIX-strftime-Compiler-0.46
+    pathname: K/KA/KAZEBURO/POSIX-strftime-Compiler-0.46.tar.gz
+    provides:
+      POSIX::strftime::Compiler 0.46
+    requirements:
+      Carp 0
+      Exporter 0
+      Module::Build::Tiny 0.035
+      POSIX 0
+      Time::Local 0
+      perl 5.008001
+  Package-Stash-0.40
+    pathname: E/ET/ETHER/Package-Stash-0.40.tar.gz
+    provides:
+      Package::Stash 0.40
+      Package::Stash::PP 0.40
+    requirements:
+      B 0
+      Carp 0
+      Dist::CheckConflicts 0.02
+      ExtUtils::MakeMaker 0
+      Getopt::Long 0
+      Module::Implementation 0.06
+      Package::Stash::XS 0.26
+      Scalar::Util 0
+      Symbol 0
+      Text::ParseWords 0
+      constant 0
+      perl 5.008001
+      strict 0
+      warnings 0
+  Package-Stash-XS-0.30
+    pathname: E/ET/ETHER/Package-Stash-XS-0.30.tar.gz
+    provides:
+      Package::Stash::XS 0.30
+    requirements:
+      ExtUtils::MakeMaker 0
+      XSLoader 0
+      perl 5.008001
+      strict 0
+      warnings 0
+  Params-Util-1.102
+    pathname: R/RE/REHSACK/Params-Util-1.102.tar.gz
+    provides:
+      Params::Util 1.102
+      Params::Util::PP 1.102
+    requirements:
+      Carp 0
+      ExtUtils::MakeMaker 0
+      File::Basename 0
+      File::Copy 0
+      File::Path 0
+      File::Spec 0
+      IPC::Cmd 0
+      Scalar::Util 1.18
+      XSLoader 0.22
+      parent 0
+  Path-Tiny-0.146
+    pathname: D/DA/DAGOLDEN/Path-Tiny-0.146.tar.gz
+    provides:
+      Path::Tiny 0.146
+      Path::Tiny::Error 0.146
+    requirements:
+      Carp 0
+      Cwd 0
+      Digest 1.03
+      Digest::SHA 5.45
+      Encode 0
+      Exporter 5.57
+      ExtUtils::MakeMaker 6.17
+      Fcntl 0
+      File::Compare 0
+      File::Copy 0
+      File::Glob 0
+      File::Path 2.07
+      File::Spec 0.86
+      File::Temp 0.19
+      File::stat 0
+      constant 0
+      overload 0
+      perl 5.008001
+      strict 0
+      warnings 0
+      warnings::register 0
+  Plack-1.0051
+    pathname: M/MI/MIYAGAWA/Plack-1.0051.tar.gz
+    provides:
+      HTTP::Message::PSGI undef
+      HTTP::Server::PSGI undef
+      Plack 1.0051
+      Plack::App::CGIBin undef
+      Plack::App::Cascade undef
+      Plack::App::Directory undef
+      Plack::App::File undef
+      Plack::App::PSGIBin undef
+      Plack::App::URLMap undef
+      Plack::App::WrapCGI undef
+      Plack::Builder undef
+      Plack::Component undef
+      Plack::HTTPParser undef
+      Plack::HTTPParser::PP undef
+      Plack::Handler undef
+      Plack::Handler::Apache1 undef
+      Plack::Handler::Apache2 undef
+      Plack::Handler::Apache2::Registry undef
+      Plack::Handler::CGI undef
+      Plack::Handler::CGI::Writer undef
+      Plack::Handler::FCGI undef
+      Plack::Handler::HTTP::Server::PSGI undef
+      Plack::Handler::Standalone undef
+      Plack::LWPish undef
+      Plack::Loader undef
+      Plack::Loader::Delayed undef
+      Plack::Loader::Restarter undef
+      Plack::Loader::Shotgun undef
+      Plack::MIME undef
+      Plack::Middleware undef
+      Plack::Middleware::AccessLog undef
+      Plack::Middleware::AccessLog::Timed undef
+      Plack::Middleware::Auth::Basic undef
+      Plack::Middleware::BufferedStreaming undef
+      Plack::Middleware::Chunked undef
+      Plack::Middleware::Conditional undef
+      Plack::Middleware::ConditionalGET undef
+      Plack::Middleware::ContentLength undef
+      Plack::Middleware::ContentMD5 undef
+      Plack::Middleware::ErrorDocument undef
+      Plack::Middleware::HTTPExceptions undef
+      Plack::Middleware::Head undef
+      Plack::Middleware::IIS6ScriptNameFix undef
+      Plack::Middleware::IIS7KeepAliveFix undef
+      Plack::Middleware::JSONP undef
+      Plack::Middleware::LighttpdScriptNameFix undef
+      Plack::Middleware::Lint undef
+      Plack::Middleware::Log4perl undef
+      Plack::Middleware::LogDispatch undef
+      Plack::Middleware::NullLogger undef
+      Plack::Middleware::RearrangeHeaders undef
+      Plack::Middleware::Recursive undef
+      Plack::Middleware::Refresh undef
+      Plack::Middleware::Runtime undef
+      Plack::Middleware::SimpleContentFilter undef
+      Plack::Middleware::SimpleLogger undef
+      Plack::Middleware::StackTrace undef
+      Plack::Middleware::Static undef
+      Plack::Middleware::XFramework undef
+      Plack::Middleware::XSendfile undef
+      Plack::Recursive::ForwardRequest undef
+      Plack::Request 1.0051
+      Plack::Request::Upload undef
+      Plack::Response 1.0051
+      Plack::Runner undef
+      Plack::TempBuffer undef
+      Plack::Test undef
+      Plack::Test::MockHTTP undef
+      Plack::Test::Server undef
+      Plack::Test::Suite undef
+      Plack::Util undef
+      Plack::Util::Accessor undef
+      Plack::Util::IOWithPath undef
+      Plack::Util::Prototype undef
+    requirements:
+      Apache::LogFormat::Compiler 0.33
+      Cookie::Baker 0.07
+      Devel::StackTrace 1.23
+      Devel::StackTrace::AsHTML 0.11
+      ExtUtils::MakeMaker 0
+      File::ShareDir 1.00
+      File::ShareDir::Install 0.06
+      Filesys::Notify::Simple 0
+      HTTP::Entity::Parser 0.25
+      HTTP::Headers::Fast 0.18
+      HTTP::Message 5.814
+      HTTP::Tiny 0.034
+      Hash::MultiValue 0.05
+      Pod::Usage 1.36
+      Stream::Buffered 0.02
+      Test::TCP 2.15
+      Try::Tiny 0
+      URI 1.59
+      WWW::Form::UrlEncoded 0.23
+      parent 0
+      perl 5.012000
+  Role-Tiny-2.002004
+    pathname: H/HA/HAARG/Role-Tiny-2.002004.tar.gz
+    provides:
+      Role::Tiny 2.002004
+      Role::Tiny::With 2.002004
+    requirements:
+      Exporter 5.57
+      perl 5.006
+  Search-Elasticsearch-8.12
+    pathname: E/EZ/EZIMUEL/Search-Elasticsearch-8.12.tar.gz
+    provides:
+      Search::Elasticsearch 8.12
+      Search::Elasticsearch::Client::8_0 8.12
+      Search::Elasticsearch::Client::8_0::Bulk 8.12
+      Search::Elasticsearch::Client::8_0::Direct 8.12
+      Search::Elasticsearch::Client::8_0::Direct::Autoscaling 8.12
+      Search::Elasticsearch::Client::8_0::Direct::CCR 8.12
+      Search::Elasticsearch::Client::8_0::Direct::Cat 8.12
+      Search::Elasticsearch::Client::8_0::Direct::Cluster 8.12
+      Search::Elasticsearch::Client::8_0::Direct::Connector 8.12
+      Search::Elasticsearch::Client::8_0::Direct::ConnectorSyncJob 8.12
+      Search::Elasticsearch::Client::8_0::Direct::DanglingIndices 8.12
+      Search::Elasticsearch::Client::8_0::Direct::Enrich 8.12
+      Search::Elasticsearch::Client::8_0::Direct::Eql 8.12
+      Search::Elasticsearch::Client::8_0::Direct::Esql 8.12
+      Search::Elasticsearch::Client::8_0::Direct::Features 8.12
+      Search::Elasticsearch::Client::8_0::Direct::Fleet 8.12
+      Search::Elasticsearch::Client::8_0::Direct::Graph 8.12
+      Search::Elasticsearch::Client::8_0::Direct::ILM 8.12
+      Search::Elasticsearch::Client::8_0::Direct::Indices 8.12
+      Search::Elasticsearch::Client::8_0::Direct::Inference 8.12
+      Search::Elasticsearch::Client::8_0::Direct::Ingest 8.12
+      Search::Elasticsearch::Client::8_0::Direct::License 8.12
+      Search::Elasticsearch::Client::8_0::Direct::Logstash 8.12
+      Search::Elasticsearch::Client::8_0::Direct::ML 8.12
+      Search::Elasticsearch::Client::8_0::Direct::Migration 8.12
+      Search::Elasticsearch::Client::8_0::Direct::Monitoring 8.12
+      Search::Elasticsearch::Client::8_0::Direct::Nodes 8.12
+      Search::Elasticsearch::Client::8_0::Direct::Profiling 8.12
+      Search::Elasticsearch::Client::8_0::Direct::QueryRuleset 8.12
+      Search::Elasticsearch::Client::8_0::Direct::Rollup 8.12
+      Search::Elasticsearch::Client::8_0::Direct::SQL 8.12
+      Search::Elasticsearch::Client::8_0::Direct::SSL 8.12
+      Search::Elasticsearch::Client::8_0::Direct::SearchApplication 8.12
+      Search::Elasticsearch::Client::8_0::Direct::SearchableSnapshots 8.12
+      Search::Elasticsearch::Client::8_0::Direct::Security 8.12
+      Search::Elasticsearch::Client::8_0::Direct::Shutdown 8.12
+      Search::Elasticsearch::Client::8_0::Direct::Simulate 8.12
+      Search::Elasticsearch::Client::8_0::Direct::Slm 8.12
+      Search::Elasticsearch::Client::8_0::Direct::Snapshot 8.12
+      Search::Elasticsearch::Client::8_0::Direct::Synonyms 8.12
+      Search::Elasticsearch::Client::8_0::Direct::Tasks 8.12
+      Search::Elasticsearch::Client::8_0::Direct::TextStructure 8.12
+      Search::Elasticsearch::Client::8_0::Direct::Transform 8.12
+      Search::Elasticsearch::Client::8_0::Direct::Watcher 8.12
+      Search::Elasticsearch::Client::8_0::Direct::XPack 8.12
+      Search::Elasticsearch::Client::8_0::Role::API 8.12
+      Search::Elasticsearch::Client::8_0::Role::Bulk 8.12
+      Search::Elasticsearch::Client::8_0::Role::Scroll 8.12
+      Search::Elasticsearch::Client::8_0::Scroll 8.12
+      Search::Elasticsearch::Client::8_0::TestServer 8.12
+      Search::Elasticsearch::Cxn::Factory 8.12
+      Search::Elasticsearch::Cxn::HTTPTiny 8.12
+      Search::Elasticsearch::Cxn::LWP 8.12
+      Search::Elasticsearch::CxnPool::Sniff 8.12
+      Search::Elasticsearch::CxnPool::Static 8.12
+      Search::Elasticsearch::CxnPool::Static::NoPing 8.12
+      Search::Elasticsearch::Error 8.12
+      Search::Elasticsearch::Logger::LogAny 8.12
+      Search::Elasticsearch::Role::API 8.12
+      Search::Elasticsearch::Role::Client 8.12
+      Search::Elasticsearch::Role::Client::Direct 8.12
+      Search::Elasticsearch::Role::Cxn 8.12
+      Search::Elasticsearch::Role::CxnPool 8.12
+      Search::Elasticsearch::Role::CxnPool::Sniff 8.12
+      Search::Elasticsearch::Role::CxnPool::Static 8.12
+      Search::Elasticsearch::Role::CxnPool::Static::NoPing 8.12
+      Search::Elasticsearch::Role::Is_Sync 8.12
+      Search::Elasticsearch::Role::Logger 8.12
+      Search::Elasticsearch::Role::Serializer 8.12
+      Search::Elasticsearch::Role::Serializer::JSON 8.12
+      Search::Elasticsearch::Role::Transport 8.12
+      Search::Elasticsearch::Serializer::JSON 8.12
+      Search::Elasticsearch::Serializer::JSON::Cpanel 8.12
+      Search::Elasticsearch::Serializer::JSON::PP 8.12
+      Search::Elasticsearch::Serializer::JSON::XS 8.12
+      Search::Elasticsearch::TestServer 8.12
+      Search::Elasticsearch::Transport 8.12
+      Search::Elasticsearch::Util 8.12
+    requirements:
+      Any::URI::Escape 0
+      Data::Dumper 0
+      Devel::GlobalDestruction 0
+      Encode 0
+      ExtUtils::MakeMaker 0
+      File::Temp 0
+      HTTP::Headers 0
+      HTTP::Request 0
+      HTTP::Tiny 0.076
+      IO::Compress::Deflate 0
+      IO::Compress::Gzip 0
+      IO::Select 0
+      IO::Socket 0
+      IO::Uncompress::Gunzip 0
+      IO::Uncompress::Inflate 0
+      JSON::MaybeXS 1.002002
+      JSON::PP 0
+      LWP::UserAgent 0
+      List::Util 0
+      Log::Any 1.02
+      Log::Any::Adapter 0
+      MIME::Base64 0
+      Module::Runtime 0
+      Moo 2.001000
+      Moo::Role 0
+      Net::IP 0
+      POSIX 0
+      Package::Stash 0.34
+      Scalar::Util 0
+      Sub::Exporter 0
+      Time::HiRes 0
+      Try::Tiny 0
+      URI 0
+      namespace::clean 0
+      overload 0
+      strict 0
+      warnings 0
+  Stream-Buffered-0.03
+    pathname: D/DO/DOY/Stream-Buffered-0.03.tar.gz
+    provides:
+      Stream::Buffered 0.03
+      Stream::Buffered::Auto undef
+      Stream::Buffered::File undef
+      Stream::Buffered::PerlIO undef
+    requirements:
+      ExtUtils::MakeMaker 6.30
+      IO::File 1.14
+  String-Formatter-1.235
+    pathname: R/RJ/RJBS/String-Formatter-1.235.tar.gz
+    provides:
+      String::Formatter 1.235
+      String::Formatter::Cookbook 1.235
+    requirements:
+      ExtUtils::MakeMaker 6.78
+      Params::Util 0
+      Sub::Exporter 0
+      perl 5.012
+      strict 0
+      warnings 0
+  Sub-Exporter-0.991
+    pathname: R/RJ/RJBS/Sub-Exporter-0.991.tar.gz
+    provides:
+      Sub::Exporter 0.991
+      Sub::Exporter::Util 0.991
+    requirements:
+      Carp 0
+      Data::OptList 0.100
+      ExtUtils::MakeMaker 6.78
+      Params::Util 0.14
+      Sub::Install 0.92
+      perl 5.012
+      strict 0
+      warnings 0
+  Sub-Exporter-Progressive-0.001013
+    pathname: F/FR/FREW/Sub-Exporter-Progressive-0.001013.tar.gz
+    provides:
+      Sub::Exporter::Progressive 0.001013
+    requirements:
+      ExtUtils::MakeMaker 0
+  Sub-Install-0.929
+    pathname: R/RJ/RJBS/Sub-Install-0.929.tar.gz
+    provides:
+      Sub::Install 0.929
+    requirements:
+      B 0
+      Carp 0
+      ExtUtils::MakeMaker 6.78
+      Scalar::Util 0
+      perl 5.008000
+      strict 0
+      warnings 0
+  Sub-Quote-2.006008
+    pathname: H/HA/HAARG/Sub-Quote-2.006008.tar.gz
+    provides:
+      Sub::Defer 2.006008
+      Sub::Quote 2.006008
+    requirements:
+      ExtUtils::MakeMaker 0
+      Scalar::Util 0
+      perl 5.006
+  Test-Deep-1.204
+    pathname: R/RJ/RJBS/Test-Deep-1.204.tar.gz
+    provides:
+      Test::Deep 1.204
+      Test::Deep::All 1.204
+      Test::Deep::Any 1.204
+      Test::Deep::Array 1.204
+      Test::Deep::ArrayEach 1.204
+      Test::Deep::ArrayElementsOnly 1.204
+      Test::Deep::ArrayLength 1.204
+      Test::Deep::ArrayLengthOnly 1.204
+      Test::Deep::Blessed 1.204
+      Test::Deep::Boolean 1.204
+      Test::Deep::Cache 1.204
+      Test::Deep::Cache::Simple 1.204
+      Test::Deep::Class 1.204
+      Test::Deep::Cmp 1.204
+      Test::Deep::Code 1.204
+      Test::Deep::Hash 1.204
+      Test::Deep::HashEach 1.204
+      Test::Deep::HashElements 1.204
+      Test::Deep::HashKeys 1.204
+      Test::Deep::HashKeysOnly 1.204
+      Test::Deep::Ignore 1.204
+      Test::Deep::Isa 1.204
+      Test::Deep::ListMethods 1.204
+      Test::Deep::MM 1.204
+      Test::Deep::Methods 1.204
+      Test::Deep::NoTest 1.204
+      Test::Deep::None 1.204
+      Test::Deep::Number 1.204
+      Test::Deep::Obj 1.204
+      Test::Deep::Ref 1.204
+      Test::Deep::RefType 1.204
+      Test::Deep::Regexp 1.204
+      Test::Deep::RegexpMatches 1.204
+      Test::Deep::RegexpOnly 1.204
+      Test::Deep::RegexpRef 1.204
+      Test::Deep::RegexpRefOnly 1.204
+      Test::Deep::RegexpVersion 1.204
+      Test::Deep::ScalarRef 1.204
+      Test::Deep::ScalarRefOnly 1.204
+      Test::Deep::Set 1.204
+      Test::Deep::Shallow 1.204
+      Test::Deep::Stack 1.204
+      Test::Deep::String 1.204
+      Test::Deep::SubHash 1.204
+      Test::Deep::SubHashElements 1.204
+      Test::Deep::SubHashKeys 1.204
+      Test::Deep::SubHashKeysOnly 1.204
+      Test::Deep::SuperHash 1.204
+      Test::Deep::SuperHashElements 1.204
+      Test::Deep::SuperHashKeys 1.204
+      Test::Deep::SuperHashKeysOnly 1.204
+    requirements:
+      ExtUtils::MakeMaker 6.78
+      List::Util 1.09
+      Scalar::Util 1.09
+      Test::Builder 0
+      Test::More 0.96
+      perl 5.012
+  Test-SharedFork-0.35
+    pathname: E/EX/EXODIST/Test-SharedFork-0.35.tar.gz
+    provides:
+      Test::SharedFork 0.35
+      Test::SharedFork::Array undef
+      Test::SharedFork::Scalar undef
+      Test::SharedFork::Store undef
+    requirements:
+      ExtUtils::MakeMaker 6.64
+      File::Temp 0
+      Test::Builder 0.32
+      Test::Builder::Module 0
+      Test::More 0.88
+      perl 5.008_001
+  Test-TCP-2.22
+    pathname: M/MI/MIYAGAWA/Test-TCP-2.22.tar.gz
+    provides:
+      Net::EmptyPort undef
+      Test::TCP 2.22
+      Test::TCP::CheckPort undef
+    requirements:
+      ExtUtils::MakeMaker 6.64
+      IO::Socket::INET 0
+      IO::Socket::IP 0
+      Test::More 0
+      Test::SharedFork 0.29
+      Time::HiRes 0
+      perl 5.008001
+  TimeDate-2.33
+    pathname: A/AT/ATOOMIC/TimeDate-2.33.tar.gz
+    provides:
+      Date::Format 2.24
+      Date::Format::Generic 2.24
+      Date::Language 1.10
+      Date::Language::Afar 0.99
+      Date::Language::Amharic 1.00
+      Date::Language::Austrian 1.01
+      Date::Language::Brazilian 1.01
+      Date::Language::Bulgarian 1.01
+      Date::Language::Chinese 1.00
+      Date::Language::Chinese_GB 1.01
+      Date::Language::Czech 1.01
+      Date::Language::Danish 1.01
+      Date::Language::Dutch 1.02
+      Date::Language::English 1.01
+      Date::Language::Finnish 1.01
+      Date::Language::French 1.04
+      Date::Language::Gedeo 0.99
+      Date::Language::German 1.02
+      Date::Language::Greek 1.00
+      Date::Language::Hungarian 1.01
+      Date::Language::Icelandic 1.01
+      Date::Language::Italian 1.01
+      Date::Language::Norwegian 1.01
+      Date::Language::Occitan 1.04
+      Date::Language::Oromo 0.99
+      Date::Language::Romanian 1.01
+      Date::Language::Russian 1.01
+      Date::Language::Russian_cp1251 1.01
+      Date::Language::Russian_koi8r 1.01
+      Date::Language::Sidama 0.99
+      Date::Language::Somali 0.99
+      Date::Language::Spanish 1.00
+      Date::Language::Swedish 1.01
+      Date::Language::Tigrinya 1.00
+      Date::Language::TigrinyaEritrean 1.00
+      Date::Language::TigrinyaEthiopian 1.00
+      Date::Language::Turkish 1.0
+      Date::Parse 2.33
+      Time::Zone 2.24
+      TimeDate 1.21
+    requirements:
+      ExtUtils::MakeMaker 0
+  Try-Tiny-0.31
+    pathname: E/ET/ETHER/Try-Tiny-0.31.tar.gz
+    provides:
+      Try::Tiny 0.31
+    requirements:
+      Carp 0
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      constant 0
+      perl 5.006
+      strict 0
+      warnings 0
+  URI-5.28
+    pathname: O/OA/OALDERS/URI-5.28.tar.gz
+    provides:
+      URI 5.28
+      URI::Escape 5.28
+      URI::Heuristic 5.28
+      URI::IRI 5.28
+      URI::QueryParam 5.28
+      URI::Split 5.28
+      URI::URL 5.28
+      URI::WithBase 5.28
+      URI::data 5.28
+      URI::file 5.28
+      URI::file::Base 5.28
+      URI::file::FAT 5.28
+      URI::file::Mac 5.28
+      URI::file::OS2 5.28
+      URI::file::QNX 5.28
+      URI::file::Unix 5.28
+      URI::file::Win32 5.28
+      URI::ftp 5.28
+      URI::geo 5.28
+      URI::gopher 5.28
+      URI::http 5.28
+      URI::https 5.28
+      URI::icap 5.28
+      URI::icaps 5.28
+      URI::ldap 5.28
+      URI::ldapi 5.28
+      URI::ldaps 5.28
+      URI::mailto 5.28
+      URI::mms 5.28
+      URI::news 5.28
+      URI::nntp 5.28
+      URI::nntps 5.28
+      URI::pop 5.28
+      URI::rlogin 5.28
+      URI::rsync 5.28
+      URI::rtsp 5.28
+      URI::rtspu 5.28
+      URI::sftp 5.28
+      URI::sip 5.28
+      URI::sips 5.28
+      URI::snews 5.28
+      URI::ssh 5.28
+      URI::telnet 5.28
+      URI::tn3270 5.28
+      URI::urn 5.28
+      URI::urn::isbn 5.28
+      URI::urn::oid 5.28
+    requirements:
+      Carp 0
+      Cwd 0
+      Data::Dumper 0
+      Encode 0
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      MIME::Base64 2
+      Net::Domain 0
+      Scalar::Util 0
+      constant 0
+      integer 0
+      overload 0
+      parent 0
+      perl 5.008001
+      strict 0
+      utf8 0
+      warnings 0
+  Variable-Magic-0.64
+    pathname: V/VP/VPIT/Variable-Magic-0.64.tar.gz
+    provides:
+      Variable::Magic 0.64
+    requirements:
+      Carp 0
+      Config 0
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      IO::Handle 0
+      IO::Select 0
+      IPC::Open3 0
+      POSIX 0
+      Socket 0
+      Test::More 0
+      XSLoader 0
+      base 0
+      lib 0
+      perl 5.008
+  WWW-Form-UrlEncoded-0.26
+    pathname: K/KA/KAZEBURO/WWW-Form-UrlEncoded-0.26.tar.gz
+    provides:
+      WWW::Form::UrlEncoded 0.26
+      WWW::Form::UrlEncoded::PP undef
+    requirements:
+      Exporter 0
+      Module::Build 0.4005
+      perl 5.008001
+  WWW-RobotRules-6.02
+    pathname: G/GA/GAAS/WWW-RobotRules-6.02.tar.gz
+    provides:
+      WWW::RobotRules 6.02
+      WWW::RobotRules::AnyDBM_File 6.00
+      WWW::RobotRules::InCore 6.02
+    requirements:
+      AnyDBM_File 0
+      ExtUtils::MakeMaker 0
+      Fcntl 0
+      URI 1.10
+      perl 5.008001
+  libwww-perl-6.77
+    pathname: O/OA/OALDERS/libwww-perl-6.77.tar.gz
+    provides:
+      LWP 6.77
+      LWP::Authen::Basic 6.77
+      LWP::Authen::Digest 6.77
+      LWP::Authen::Ntlm 6.77
+      LWP::ConnCache 6.77
+      LWP::Debug 6.77
+      LWP::Debug::TraceHTTP 6.77
+      LWP::DebugFile 6.77
+      LWP::MemberMixin 6.77
+      LWP::Protocol 6.77
+      LWP::Protocol::cpan 6.77
+      LWP::Protocol::data 6.77
+      LWP::Protocol::file 6.77
+      LWP::Protocol::ftp 6.77
+      LWP::Protocol::gopher 6.77
+      LWP::Protocol::http 6.77
+      LWP::Protocol::loopback 6.77
+      LWP::Protocol::mailto 6.77
+      LWP::Protocol::nntp 6.77
+      LWP::Protocol::nogo 6.77
+      LWP::RobotUA 6.77
+      LWP::Simple 6.77
+      LWP::UserAgent 6.77
+    requirements:
+      Digest::MD5 0
+      Encode 2.12
+      Encode::Locale 0
+      ExtUtils::MakeMaker 0
+      File::Copy 0
+      File::Listing 6
+      File::Temp 0
+      Getopt::Long 0
+      HTML::Entities 0
+      HTML::HeadParser 3.71
+      HTTP::Cookies 6
+      HTTP::Date 6
+      HTTP::Negotiate 6
+      HTTP::Request 6.18
+      HTTP::Request::Common 6.18
+      HTTP::Response 6.18
+      HTTP::Status 6.18
+      IO::Select 0
+      IO::Socket 0
+      LWP::MediaTypes 6
+      MIME::Base64 2.1
+      Module::Load 0
+      Net::FTP 2.58
+      Net::HTTP 6.18
+      Scalar::Util 0
+      Try::Tiny 0
+      URI 1.10
+      URI::Escape 0
+      WWW::RobotRules 6
+      parent 0.217
+      perl 5.008001
+      strict 0
+      warnings 0
+  namespace-clean-0.27
+    pathname: R/RI/RIBASUSHI/namespace-clean-0.27.tar.gz
+    provides:
+      namespace::clean 0.27
+    requirements:
+      B::Hooks::EndOfScope 0.12
+      ExtUtils::MakeMaker 0
+      Package::Stash 0.23
+      perl 5.008001
