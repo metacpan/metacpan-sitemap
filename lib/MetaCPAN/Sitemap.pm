@@ -3,7 +3,7 @@ use v5.36;
 
 use Moo::Role;
 
-use Path::Tiny qw(tempdir);
+use Path::Tiny qw(path tempdir);
 use String::Formatter named_stringf => {
   codes => {
     s => sub { $_ },
@@ -27,6 +27,9 @@ has base_dir => (
       TEMPLATE => 'metacpan-sitemap-XXXXXX',
       TMPDIR   => 1,
     );
+  },
+  coerce => sub ($dir) {
+    ref $dir ? $dir : path($dir);
   },
 );
 

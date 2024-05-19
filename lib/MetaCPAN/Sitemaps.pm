@@ -15,6 +15,7 @@ use Plack::Util ();
 use MetaCPAN::Logger qw(:log :dlog);
 use Scalar::Util qw(blessed);
 use Module::Runtime qw(require_module);
+use Path::Tiny qw(tempdir path);
 
 use namespace::clean;
 
@@ -49,6 +50,9 @@ has base_dir => (
       TEMPLATE => 'metacpan-sitemap-XXXXXX',
       TMPDIR   => 1,
     );
+  },
+  coerce => sub ($dir) {
+    ref $dir ? $dir : path($dir);
   },
 );
 
