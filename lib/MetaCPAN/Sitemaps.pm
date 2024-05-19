@@ -64,11 +64,12 @@ has maps => (
     my $config = $self->_maps;
     my $es = $self->es;
     [ map {
-      my ($class, $opts) = %$_;
+      my %opts = %$_;
+      my $class = delete $opts{class};
       require_module $class;
       $class->new(
         es => $es,
-        %$opts,
+        %opts,
       );
     } @$config ];
   },

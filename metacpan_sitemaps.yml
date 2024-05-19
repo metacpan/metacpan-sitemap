@@ -1,0 +1,19 @@
+es:
+  client: '2_0::Direct'
+  nodes:
+    - localhost:9200
+maps:
+  - class: MetaCPAN::Sitemap::Author
+    index: cpan_v1_01
+    type:  author
+
+log4perl:
+  rootLogger: DEBUG, OUTPUT
+
+  appender:
+    OUTPUT:
+      value: Log::Log4perl::Appender::Screen
+      stderr: 1
+      layout:
+        value: PatternLayout
+        ConversionPattern: '[%d] [%p] %m%n'
