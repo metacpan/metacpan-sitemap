@@ -4,7 +4,6 @@ use v5.36;
 use Moo::Role;
 
 use Path::Tiny qw(tempdir);
-use String::Formatter qw(named_stringf);
 use String::Formatter named_stringf => {
   codes => {
     s => sub { $_ },
