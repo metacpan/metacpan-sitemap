@@ -14,6 +14,7 @@ use MetaCPAN::Logger qw(:log :dlog);
 use Scalar::Util qw(blessed);
 use Module::Runtime qw(require_module);
 use Path::Tiny qw(tempdir path);
+use Ref::Util qw(is_plain_hashref);
 
 use namespace::clean;
 
@@ -111,10 +112,23 @@ sub sitemap_app ($self, $map) {
 sub to_app ($self) {
   $self->regenerate;
 
+  my $rebuild_mw;
+  if (my $rebuild = $self->config->config->{rebuild}) {
+    require MetaCPAN::Middleware::Rebuild;
+    $rebuild_mw = MetaCPAN::Middleware::Rebuild->new(
+      lock_dir => $self->base_dir,
+      is_plain_hashref($rebuild) ? $rebuild->%* : (),
+      callback => sub { $self->regenerate },
+    );
+  }
+
   builder {
     enable 'XSendfile';
     for my $map ($self->maps->@*) {
       mount '/' . $map->base_name . '.xml' => builder {
+        if ($rebuild_mw) {
+          enable sub ($app) { $rebuild_mw->wrap($app) };
+        }
         $self->sitemap_app($map);
       };
     }

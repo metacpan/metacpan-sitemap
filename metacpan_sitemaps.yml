@@ -7,6 +7,8 @@ maps:
     index: cpan_v1_01
     type:  author
 
+rebuild:
+
 log4perl:
   rootLogger: DEBUG, OUTPUT
 
