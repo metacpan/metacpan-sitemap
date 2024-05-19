@@ -6,8 +6,6 @@ use Moo;
 use Plack::Builder qw(builder mount enable enable_if);
 use Plack::App::File ();
 use Plack::Request ();
-use MetaCPAN::Sitemap::Author ();
-use MetaCPAN::Sitemap::Release ();
 use MetaCPAN::Config ();
 use Search::Elasticsearch ();
 use POSIX ();
