@@ -16,4 +16,4 @@ log4perl:
       stderr: 1
       layout:
         value: PatternLayout
-        ConversionPattern: '[%d] [%p] %m%n'
+        ConversionPattern: '[%d] [%P] [%p] %m%n'

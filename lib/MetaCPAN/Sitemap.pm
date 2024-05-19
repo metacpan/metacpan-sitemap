@@ -9,6 +9,7 @@ use String::Formatter named_stringf => {
     s => sub { $_ },
   },
 };
+use MetaCPAN::Logger qw(:log :dlog);
 
 use HTML::Entities     qw( encode_entities_numeric );
 use IO::Compress::Gzip qw(gzip Z_BEST_COMPRESSION);
@@ -89,7 +90,7 @@ sub url_fields ($self, $attr) {
 
 sub gen_sitemap ($self) {
   my $base_name = $self->base_name;
-
+  log_info { "Generating $base_name sitemap" };
   my $tempfile = File::Temp->new(
     TEMPLATE  => $base_name.'-XXXXXX',
     DIR       => $self->base_dir->stringify,
@@ -105,7 +106,9 @@ sub gen_sitemap ($self) {
 END_XML_HEADER
 
   my $iter = $self->get_iterator;
+  my $records = 0;
   while (my $item = $iter->()) {
+    $records++;
     my $fields = $self->url_fields($item);
     my $out = '<url>';
     for my $field (sort keys %$fields) {
@@ -117,6 +120,8 @@ END_XML_HEADER
 
   $tempfile->print("</urlset>\n");
   $tempfile->close;
+
+  log_info { "Created $tempfile with $records records" };
 
   return Path::Tiny->new("$tempfile");
 }
@@ -131,6 +136,8 @@ sub gen_sitemap_gz ($self, $file = $self->file) {
     UNLINK    => 0,
   );
 
+  log_info { "Compressing $file to $tempfile" };
+
   gzip("$file", $tempfile,
     -Level => Z_BEST_COMPRESSION,
   );
@@ -144,7 +151,9 @@ sub generate ($self) {
   my $gz = $self->gen_sitemap_gz($map);
   my $final = $self->base_dir->child($self->base_name . '.xml');
   my $final_gz = $self->base_dir->child($self->base_name . '.xml.gz');
+  log_info { "Moving $map to $final" };
   $map->move($final);
+  log_info { "Moving $gz to $final_gz" };
   $gz->move($final_gz);
   $self->_set_file($final);
   $self->_set_gz($final_gz);
