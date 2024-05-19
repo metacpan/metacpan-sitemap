@@ -65,64 +65,61 @@ has maps => (
   default => sub ($self) {
     my $config = $self->_maps;
     my $es = $self->es;
+    my $base_dir = $self->base_dir;
     [ map {
       my %opts = %$_;
       my $class = delete $opts{class};
       require_module $class;
       $class->new(
         es => $es,
+        base_dir => $base_dir,
         %opts,
       );
     } @$config ];
   },
 );
 
-sub to_app ($self) {
+sub regenerate ($self) {
+  log_info { "Generating sitemaps" };
   for my $map ($self->maps->@*) {
     $map->generate;
   }
-  # $self->_set_rebuild_time(time);
+  return;
+}
 
+sub sitemap_app ($self, $map) {
   builder {
-    enable 'XSendfile';
-    #enable sub ($app) {
-    #  sub ($env) {
-    #    if ($self->
-    #    $app->($env);
-    #  };
-    #};
-    for my $map ($self->maps->@*) {
-      mount '/' . $map->base_name . '.xml' => builder {
+    enable 'Headers',
+      append => ['Vary', 'Accept-Encoding'];
+    enable_if sub ($env) {
+      my $req = Plack::Request->new($env);
+      my @encoding = map split(/,\s*/),
+        $req->headers->header('Accept-Encoding');
+      my $want_gzip = grep /\Agzip(?:;|\z)/, @encoding;
+      return $want_gzip;
+    }, sub {
+      builder {
         enable 'Headers',
-          append => ['Vary', 'Accept-Encoding'];
-        enable_if sub ($env) {
-          my $req = Plack::Request->new($env);
-          my $want_gzip =
-            grep /\Agzip(?:;|\z)/,
-            map split(/,\s*/),
-            $req->headers->header('Accept-Encoding');
-          $want_gzip;
-        }, sub {
-          builder {
-            enable 'Headers',
-              append => ['Content-Encoding', 'gzip'];
-            Plack::App::File->new(file => $map->gz, content_type => 'application/xml')->to_app;
-          }
-        };
-        Plack::App::File->new(file => $map->file, content_type => 'application/xml')->to_app;
+          append => ['Content-Encoding', 'gzip'];
+        Plack::App::File->new(file => $map->gz, content_type => 'application/xml')->to_app;
       };
-    }
-    mount '/' => sub {  };
+    };
+    Plack::App::File->new(file => $map->file, content_type => 'application/xml')->to_app;
   };
 }
 
-has rebuild_period => (
-  is => 'ro',
-  default => 60*60*24,
-);
+sub to_app ($self) {
+  $self->regenerate;
 
-has rebuild_time => (
-  is => 'rwp',
-);
+  builder {
+    enable 'XSendfile';
+    for my $map ($self->maps->@*) {
+      mount '/' . $map->base_name . '.xml' => builder {
+        $self->sitemap_app($map);
+      };
+    }
+    mount '/' => sub { [404, ['Content-Type' => 'text/plain'], ['Not found']] };
+  };
+}
 
 1;
