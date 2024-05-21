@@ -1,10 +1,10 @@
 es:
   client: '2_0::Direct'
   nodes:
-    - localhost:9200
+    - https://fastapi.metacpan.org/v1/
 maps:
   - class: MetaCPAN::Sitemap::Author
-    index: cpan_v1_01
+    index: cpan
     type:  author
 
 rebuild:

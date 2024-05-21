@@ -71,6 +71,7 @@ sub get_iterator ($self) {
   my $scroll = $self->es->scroll_helper(
     search_type => 'scan',
     size        => 500,
+    scroll_in_qs => 1,
     index       => $self->index,
     ( defined $self->type ? ( type => $self->type ) : ()),
     body        => $self->query,
