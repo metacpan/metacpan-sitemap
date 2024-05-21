@@ -8,6 +8,7 @@ use Time::HiRes qw(time);
 use Path::Tiny qw(tempdir);
 use POSIX ();
 use MetaCPAN::Logger qw(:log :dlog);
+use Carp qw(croak);
 
 use namespace::clean;
 
@@ -30,17 +31,30 @@ sub rebuild_lock ($self) {
 has period => (
   is => 'ro',
   default => 60*60*24,
+  isa => sub {
+    if ($_[0] < 0) {
+      croak "period $_[0] is not a positive number!"
+    }
+  },
 );
 
 has variance => (
   is => 'ro',
-  default => 60,
+  default => 0.001,
+  isa => sub {
+    if ($_[0] < 0 || $_[0] > 1) {
+      croak "variance $_[0] is not between 0 and 1!";
+    }
+  },
 );
 
 sub rebuild_period ($self) {
   my $period = $self->period;
-  my $variance = $self->variance;
-  $period - $variance / 2 + rand($variance);
+  if (my $variance = $self->variance) {
+    my $var_range = $variance * $period;
+    $period -= $var_range / 2 + rand($var_range);
+  }
+  $period;
 }
 
 has next_rebuild_time => (
