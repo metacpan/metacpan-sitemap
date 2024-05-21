@@ -119,8 +119,7 @@ sub try_rebuild ($self) {
   return;
 }
 
-sub call ($self, $env) {
-  my $time = time;
+sub maybe_rebuild ($self) {
   if (time > $self->next_rebuild_time) {
     log_debug { "rebuild needed" };
     $self->try_rebuild;
@@ -128,6 +127,10 @@ sub call ($self, $env) {
   else {
     log_debug { "rebuild not needed" };
   }
+}
+
+sub call ($self, $env) {
+  $self->maybe_rebuild;
   $self->app->($env);
 }
 
