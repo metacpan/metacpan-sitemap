@@ -12,8 +12,7 @@
 /carton.lock
 /cover_db/
 /local/
-/log4perl_local.conf
-/metacpan_web_local.conf
+/metacpan_sitemaps_local.yml
 /node_modules/
 /perltidy.LOG
 /pm_to_blib

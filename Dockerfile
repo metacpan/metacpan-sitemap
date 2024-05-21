@@ -15,7 +15,7 @@ EOT
 ENV PERL5LIB="/app/lib:/app/local/lib/perl5"
 ENV PATH="/app/local/bin:${PATH}"
 
-COPY app.psgi *.conf ./
+COPY app.psgi metacpan_sitemaps*.yml ./
 COPY lib lib
 
 CMD [ \
