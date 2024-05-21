@@ -36,14 +36,10 @@ has base_dir => (
 
 has file => (
   is => 'rwp',
-  lazy => 1,
-  builder => 1,
 );
 
 has gz => (
   is => 'rwp',
-  lazy => 1,
-  builder => 1,
 );
 
 has index => (
