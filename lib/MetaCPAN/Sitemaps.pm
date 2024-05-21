@@ -26,6 +26,7 @@ around BUILDARGS => sub ($orig, $class, @args) {
   my $args = $class->$orig(@args);
 
   my $config = $args->{config} //= MetaCPAN::Config->from_lib;
+
   return {
     $config->config->%*,
     $args->%*,
@@ -80,6 +81,10 @@ has maps => (
   },
 );
 
+has rebuild => (
+  is => 'ro',
+);
+
 sub regenerate ($self) {
   log_info { "Generating sitemaps" };
   for my $map ($self->maps->@*) {
@@ -113,7 +118,7 @@ sub to_app ($self) {
   $self->regenerate;
 
   my $rebuild_mw;
-  if (my $rebuild = $self->config->config->{rebuild}) {
+  if (my $rebuild = $self->rebuild) {
     require MetaCPAN::Middleware::Rebuild;
     $rebuild_mw = MetaCPAN::Middleware::Rebuild->new(
       lock_dir => $self->base_dir,
