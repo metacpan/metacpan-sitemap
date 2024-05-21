@@ -7,7 +7,7 @@ maps:
     index: cpan
     type:  author
 
-rebuild:
+rebuild: true
 
 log4perl:
   rootLogger: DEBUG, OUTPUT
