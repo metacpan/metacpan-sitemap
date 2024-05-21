@@ -94,6 +94,7 @@ sub gen_sitemap ($self) {
     SUFFIX    => '.xml',
     UNLINK    => 0,
   );
+  my $path = path("$tempfile");
 
   $tempfile->print(<<'END_XML_HEADER');
 <?xml version='1.0' encoding='UTF-8'?>
@@ -118,9 +119,9 @@ END_XML_HEADER
   $tempfile->print("</urlset>\n");
   $tempfile->close;
 
-  log_info { "Created $tempfile with $records records" };
+  log_info { "Created " . $path->basename . " with $records records" };
 
-  return Path::Tiny->new("$tempfile");
+  return $path;
 }
 
 sub gen_sitemap_gz ($self, $file = $self->file) {
@@ -132,8 +133,9 @@ sub gen_sitemap_gz ($self, $file = $self->file) {
     SUFFIX    => '.xml.gz',
     UNLINK    => 0,
   );
+  my $path = path("$tempfile");
 
-  log_info { "Compressing $file to $tempfile" };
+  log_info { "Compressing " . $file->basename . " to " . $path->basename };
 
   gzip("$file", $tempfile,
     -Level => Z_BEST_COMPRESSION,
@@ -148,9 +150,9 @@ sub generate ($self) {
   my $gz = $self->gen_sitemap_gz($map);
   my $final = $self->base_dir->child($self->base_name . '.xml');
   my $final_gz = $self->base_dir->child($self->base_name . '.xml.gz');
-  log_info { "Moving $map to $final" };
+  log_info { "Moving " . $map->basename . " to " . $final->basename };
   $map->move($final);
-  log_info { "Moving $gz to $final_gz" };
+  log_info { "Moving " . $gz->basename . " to " . $final_gz->basename };
   $gz->move($final_gz);
   $self->_set_file($final);
   $self->_set_gz($final_gz);
